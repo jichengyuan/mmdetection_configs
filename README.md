@@ -17,7 +17,17 @@ train=dict(
 ```shell
 python tools/train.py /path/to/your/config/
 ```
+or
+```shell
+python tools/train.py /path/to/your/config/ \
+--work-dir /path/to/your/workdir \
+--cfg-options data.train.ann_file=/path/to/your/train_annotaitons_file/ \
+data.train.img_prefix=/path/to/your/train_images/ \
+data.val.ann_file=/path/to/your/train_annotaitons_file/ \
+data.val.img_prefix=/path/to/your/val_images/
+```
 ### 5. Parallel-training on multiple-gpu:
 ```shell
 bash tools/dist_train.sh /path/to/your/config/ num_gpus 
 ```
+### 6. Input [wandb API keys](https://wandb.ai/authorize) for tracking and visualizing pipelines
