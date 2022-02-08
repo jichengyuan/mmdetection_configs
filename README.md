@@ -4,7 +4,7 @@
 ### 1. Clone the repo or copy the config-file
 ### 2. [Download the coco-format annotations](./data/annotations/annotations_bdd/README.md)
 ### 3. Modify the "ann_file" and "img_prefix" in the config-file (for the train, validation and test)
-e.g. For training:   
+e.g. For training on BDD:   
 train=dict(  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;type=dataset_type,  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ann_file='mmdetections/data/annotations/annotations_bdd/bdd_100k_train.json'  ,  
