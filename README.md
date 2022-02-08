@@ -26,7 +26,7 @@ data.train.img_prefix=/path/to/your/train_images/ \
 data.val.ann_file=/path/to/your/train_annotaitons_file/ \
 data.val.img_prefix=/path/to/your/val_images/
 ```
-### 5. Parallel-training on multiple-gpu:
+### 5. Parallel-training on multiple-gpus:
 ```shell
 bash tools/dist_train.sh /path/to/your/config/ num_gpus 
 ```
