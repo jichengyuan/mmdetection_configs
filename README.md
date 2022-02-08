@@ -1,0 +1,2 @@
+# mmdetection_configs
+configs_baseline_bdd_coco_kitti_training
