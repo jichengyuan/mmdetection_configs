@@ -1,4 +1,37 @@
-# Training-Configs for multi-datasets
+# I. Install mmdetection with conda
+
+## create a conda env
+
+```bash
+conda create -n open-mmlab python=3.7
+conda activate open-mmlab
+```
+
+
+
+## install pytorch via conda
+```bash
+conda install pytorch cudatoolkit=10.1 torchvision -c pytorch
+```
+
+## install mmdetection
+### clone the repo
+```bash
+git clone https://github.com/open-mmlab/mmdetection.git
+cd mmdetection
+```
+### setup mmdetection
+```bash
+pip install -r requirements/build.txt
+# coco api
+pip install "git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI"
+# mmcv toolkit
+pip install mmcv-full
+pip install -v -e .
+```
+
+
+# II. Training-Configs for multi-datasets
 
 ## Quick-start
 ### 1. Clone the repo or copy the config-file
